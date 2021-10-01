@@ -1,0 +1,145 @@
+/* PADDINGS */
+/* Padding Y-axis */
+.py-1{padding: 1rem 0;}
+.py-1-5{padding: 1.5rem 0;}
+.py-2{padding: 2rem 0;}
+.py-2-5{padding: 2.5rem 0;}
+.py-3{padding: 3rem 0;}
+.py-3-5{padding: 3.5rem 0;}
+.py-4{padding: 4rem 0;}
+.py-5{padding: 5rem 0;}
+
+/* Padding X-axis */
+.px-1{padding:0 1rem;}
+.px-1-5{padding:0 1.5rem;}
+.px-2{padding:0 2rem;}
+.px-2-5{padding:0 2.5rem;}
+.px-3{padding:0 3rem;}
+.px-3-5{padding:0 3.5rem;}
+.px-4{padding:0 4rem;}
+.px-5{padding:0 5rem;}
+
+
+/* MARGINS */
+/* margin Y-axis */
+.my-1{margin: 1rem 0;}
+.my-1-5{margin: 1.5rem 0;}
+.my-2{margin: 2rem 0;}
+.my-2-5{margin: 2.5rem 0;}
+.my-3{margin: 3rem 0;}
+.my-3-5{margin: 3.5rem 0;}
+.my-4{margin: 4rem 0;}
+.my-5{margin: 5rem 0;}
+
+/* margin X-axis */
+.mx-1{margin:0 1rem;}
+.mx-1-5{margin:0 1.5rem;}
+.mx-2{margin:0 2rem;}
+.mx-2-5{margin:0 2.5rem;}
+.mx-3{margin:0 3rem;}
+.mx-3-5{margin:0 3.5rem;}
+.mx-4{margin:0 4rem;}
+.mx-5{margin:0 5rem;}
+
+/* Buttons start here */
+.btn-primary{
+  position: relative;
+  bottom: 0;
+  left: -1%;
+  z-index: 3;
+  padding: 2.2vh 2.2vw;
+  text-transform: uppercase;
+  color: var(--light-color);
+  border: 3px solid var(--light-color);
+  opacity: 0;
+  animation: showButton 500ms forwards 2850ms ease-in;
+}
+
+.btn-primary::before{
+  position: absolute;
+  z-index: -1;
+  top: calc(50% - 1px);
+  left: 0;
+  content: '';
+  width: 15%;
+  height: 1px;
+  background: var(--light-color);
+  animation: out1 500ms forwards cubic-bezier(0.175, 0.885, 0.6, 1.275), out2 700ms forwards 500ms cubic-bezier(0.175, 0.885, 0.6, 1.275);
+}
+
+.btn-primary::after{
+  position: absolute;
+  z-index: -1;
+  top: calc(50% - 1px);
+  right: 0;
+  content: '';
+  width: 15%;
+  height: 1px;
+  background: var(--light-color);
+  animation: out1 500ms forwards cubic-bezier(0.175, 0.885, 0.6, 1.275), out2 500ms forwards 500ms cubic-bezier(0.175, 0.885, 0.6, 1.275);
+}
+
+.btn-primary:hover::before,
+.btn-primary:hover::after{
+  animation: inAnime1 500ms forwards cubic-bezier(0.175, 0.885, 0.6, 1.275), inAnime2 700ms forwards 500ms cubic-bezier(0.175, 0.885, 0.6, 1.275);
+}
+
+@keyframes inAnime1{
+  from{
+    background: var(--light-color);
+    width: 15%;
+  }
+
+  to{
+    background: var(--secondary-color);
+    width: 50%;
+  }
+}
+
+@keyframes inAnime2{
+  from{
+    top:calc(50% - 1px);
+    height: 1px;
+  }
+
+  to{
+    top: 0;
+    height: 100%;
+  }
+}
+
+@keyframes out1{
+  from{
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: var(--secondary-color);
+  }
+
+  to{
+    top:calc(50% - 1px);
+    height: 1px;
+    width: 50%;
+    background: var(--secondary-color);
+  }
+}
+
+@keyframes out2{
+  from{
+    background: var(--secondary-color);
+    width: 50%;
+  }
+
+  to{
+    background: var(--light-color);
+    width: 15%;
+  }
+}
+
+@keyframes showButton{
+  to{
+    bottom: -70px;
+    opacity: 1;
+  }
+}
+/* Button end here */

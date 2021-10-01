@@ -1,0 +1,177 @@
+@media(max-width: 1700px){
+  /* Second Menu (CONTACT) */
+  .second-menu-content > h1{
+    font-size: 2.8rem;
+  }
+}
+
+/* Ipad Pro and small laptops */
+@media(max-width: 1366px){
+  /* Navigation menu */
+  .list .list-item{
+    font-size: 1.5rem;
+    margin-left: 50%;
+  }
+
+  .list .list-item::before{
+    left: -81%;
+  }
+
+  /* Second Menu (CONTACT) */
+  .second-menu-content > h1{
+    font-size: 3rem;
+  }
+
+  /* Second content */
+  .main-title{
+    font-size: 3rem;
+  }
+}
+
+
+/* Ipad classic */
+@media(max-width:1024px){
+  /* Logo */
+  #main-header .main-nav .main-content .image{
+    position: relative;
+    width: 125px;
+    height: 125px;
+  }
+
+  /* Navigation menu */
+  .list .list-item{
+    font-size: 1.3rem;
+    margin-left: 50%;
+  }
+
+  /* Second Menu (CONTACT) */
+  .second-menu-content > h1{
+    font-size: 2.5rem;
+  }
+
+  /* Second content */
+  .main-title{
+    font-size: 2.5rem;
+  }
+
+  .second-title > p{
+    font-size: 0.9rem;
+  }
+}
+
+/* Phones */
+@media(max-width: 540px){
+  /* Home-page */
+  #main-header{
+    flex-direction: row;
+  }
+
+  #main-header .main-nav{
+    background:inherit;
+    color: #fff;
+    width: 35%;  
+    display: flex;
+    flex-direction: column;
+  }
+
+  #slider{
+    width: 100vw;
+  }
+
+  /* Main nav */
+  #main-header .main-nav .list{
+    position: absolute;
+    z-index: 50;
+  }
+
+  #main-header .main-nav .main-content{
+    position: relative;
+    z-index: 55;
+  }
+
+  /* Main content*/
+  #main-header .main-nav .main-content >.vertical-line{
+    height: 75vh;
+    margin-bottom: 5vh;
+  }
+
+  /* Logo */
+  #main-header .main-nav .main-content .image{
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Second content */
+  .main-title{
+    font-size: 1.2rem;
+  }
+
+  .second-title > p{
+    font-size: 0.7rem;
+  }
+
+  /* Second menu(contact) */
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10vw;
+  }
+}
+
+/* Small phones Iphone se-5s... */
+@media(max-width: 320px){
+  /* Main content*/
+  #main-header .main-nav .main-content >.vertical-line{
+    height: 65vh;
+    margin-bottom: 5vh;
+  }
+
+  /* Second content */
+  .main-title{
+    font-size: 1.0rem;
+  }
+
+  .second-title > p{
+    font-size: 0.5rem;
+  }
+}
+
+
+/* Landscape size */
+@media(max-height:500px){
+
+  /* Logo */
+  #main-header .main-nav .main-content .image{
+    position: relative;
+    width: 73px;
+    height: 73px;
+  }
+
+  /* Second content */
+  .second-content{
+    position: absolute;
+    top: 35vh;
+    left: 15vw;
+  }
+
+  .main-title{
+    font-size: 2rem;
+  }
+
+  .second-title > p{
+    font-size: 0.7rem;
+  }
+
+  /* Second menu(contact) */
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5vw;
+  }
+
+  .second-menu::after{
+    content: '';
+    height: 300%;
+  }
+}
