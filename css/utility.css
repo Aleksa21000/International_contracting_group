@@ -41,6 +41,12 @@
 .mx-4{margin:0 4rem;}
 .mx-5{margin:0 5rem;}
 
+
+.container{
+  width: 73.5vw;
+  margin: auto;
+}
+
 /* Buttons start here */
 .btn-primary{
   position: relative;

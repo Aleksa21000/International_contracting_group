@@ -22,6 +22,10 @@
     font-size: 3rem;
   }
 
+  .second-content{
+    left: 25vw;
+  }
+
   /* Second content */
   .main-title{
     font-size: 3rem;
@@ -85,21 +89,14 @@
   }
 
   #main-header .main-nav .main-content{
-    position: relative;
     z-index: 55;
-  }
-
-  /* Main content*/
-  #main-header .main-nav .main-content >.vertical-line{
-    height: 75vh;
-    margin-bottom: 5vh;
   }
 
   /* Logo */
   #main-header .main-nav .main-content .image{
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
   }
 
   /* Second content */
@@ -121,12 +118,6 @@
 
 /* Small phones Iphone se-5s... */
 @media(max-width: 320px){
-  /* Main content*/
-  #main-header .main-nav .main-content >.vertical-line{
-    height: 65vh;
-    margin-bottom: 5vh;
-  }
-
   /* Second content */
   .main-title{
     font-size: 1.0rem;
@@ -135,24 +126,32 @@
   .second-title > p{
     font-size: 0.5rem;
   }
-}
-
-
-/* Landscape size */
-@media(max-height:500px){
 
   /* Logo */
   #main-header .main-nav .main-content .image{
     position: relative;
-    width: 73px;
-    height: 73px;
+    width: 75px;
+    height: 75px;
   }
+  
+}
 
+/* Landscape size */
+@media(max-height:500px){
   /* Second content */
   .second-content{
-    position: absolute;
     top: 35vh;
-    left: 15vw;
+    left: 25vw;
+  }
+  
+  .list .list-item{
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .list .item-list{
+    margin-top: 4%;
+    margin-left: 10%;
   }
 
   .main-title{
@@ -162,6 +161,14 @@
   .second-title > p{
     font-size: 0.7rem;
   }
+
+  /* Logo */
+  #main-header .main-nav .main-content .image{
+    position: relative;
+    width: 80px;
+    height: 90px;
+  }
+
 
   /* Second menu(contact) */
   .grid-container{
