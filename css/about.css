@@ -1,0 +1,432 @@
+/* About us page */
+.main-content .vertical-line .page{
+  position: absolute;
+  width: 130px;
+  top: 48%;
+  left: -200px;
+  opacity: 0;
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  transition: var(--transition2);
+}
+
+.about-title{
+  width: 19vw;
+}
+
+.about-us-img{
+  height: 85%;
+}
+
+.down-widget{
+  position: sticky;
+  top: 86vh;
+  left: 13vw;
+  width: 10px;
+  height: 10px;
+  background: var(--light-color);
+  transform: rotate(45deg);
+}
+.down-widget::before{
+  content: '';
+  position: absolute;
+  top: -350%;
+  left: -120%;
+  width: 1px;
+  height: 3rem;
+  background: var(--light-color);
+  transform: rotate(135deg);
+}
+
+.up-widget{
+  position: fixed;
+  top: 46vh;
+  right: 5vw;
+  width: 10px;
+  height: 10px;
+  background: var(--light-color);
+  transform: rotate(45deg);
+  transition: var(--transition2);
+  opacity: 0;
+  display: none;
+}
+.up-widget::before{
+  content: '';
+  position: absolute;
+  bottom: -350%;
+  right: -120%;
+  width: 1px;
+  height: 3rem;
+  background: var(--light-color);
+  transform: rotate(135deg);
+}
+
+/* About us section */
+#about{
+  position: relative;
+  overflow: hidden;
+}
+
+#about .flex-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  width: 100vw;
+}
+
+#about .flex-container .content{
+  width: 55vw;
+  line-height: 1;
+  color: var(--light-color);
+}
+
+#about .flex-container .content .bold-1{
+  position: relative;
+  color: var(--secondary-color);
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  opacity: 0;
+}
+
+#about .flex-container .content .thiner-1{
+  position: relative;
+  color: var(--secondary-color);
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+  opacity: 0;
+}
+
+#about .flex-container .content .thinest-1{
+  position: relative;
+  margin-bottom: 10%;
+  color: var(--secondary-color);
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  font-weight: 100;
+  opacity: 0;
+}
+
+.content .prof{
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-family: 'IBM Plex Serif', serif;
+  margin: 1rem 0 3rem 0;
+  opacity: 0;
+}
+
+.second-title-about{
+  position: relative;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  opacity: 0;
+}
+
+.flex-container .image-container{
+  position:relative;
+  left: 100%;
+  width:100%;
+  height:700px;
+}
+
+.container .image-container .about-image{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.line-across{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 5;
+  width: 0;
+  margin: 0 0 2rem 7.4rem;
+  height: 1px;
+  background:var(--line-color);
+}
+
+.flex-container-content{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.flex-container-content .p1{
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  line-height: 1.8;
+  width: 45%;
+  margin-top: .1%;
+  font-size: 0.9rem;
+  color: var(--medium-color);
+  text-align: justify;
+  opacity: 0;
+}
+
+.flex-container-content .p2{
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  line-height: 1.8;
+  width: 45%;
+  margin-right: .5%;
+  font-size: 0.9rem;
+  color: var(--medium-color);
+  text-align: justify;
+  opacity: 0;
+}
+
+.p1 span,
+.p2 span{
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+/* Our team section */
+#our-team{
+  position: relative;
+  margin: 15rem 0;
+  overflow: hidden;
+}
+
+#our-team::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-left: 7.4rem;
+  z-index: -1;
+  width: 100vw;
+  height: 1px;
+  background:var(--line-color);
+}
+
+#our-team .container .content{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+#our-team .container .title-line{
+  height: 3px;
+  width: 0rem;
+  margin-bottom: 3rem;
+  background:var(--light-color);
+  opacity: 0;
+}
+
+#our-team .container .flex-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+#our-team .container .flex-container > h1{
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-family: 'IBM Plex Serif', serif;
+  color: var(--light-color);
+  opacity: 0;
+}
+
+#our-team .container .flex-container > p{
+  position: relative;
+  width: 30%;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  line-height: 1.8;
+  font-size: 0.9rem;
+  color: var(--medium-color);
+  text-align: justify;
+  opacity: 0;
+}
+
+#our-team .container .content .thiner-2{
+  position: relative;
+  color: var(--secondary-color);
+
+  margin-top: 5rem;
+  font-weight: 300;
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  line-height: 1;
+  opacity: 0;
+}
+
+#our-team .container .content .bold-2{
+  position: relative;
+  color: var(--secondary-color);
+
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  line-height: 1;
+  opacity: 0;
+}
+
+#our-team .container .grid-container{
+  position: relative;
+  grid-gap: 3rem;
+}
+
+#our-team .container .grid-container .grid-box{
+  position: relative;
+  top: 10%;
+  opacity: 0;
+}
+
+#our-team .container .grid-container .person-container{
+  height: 500px;
+}
+
+#our-team .container .grid-container .person-container img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#our-team .container .grid-container .box-content{
+  padding-top: 2rem;
+  color:var(--light-color);
+}
+
+#our-team .container .grid-container .box-content .description{
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  color:var(--secondary-color);
+}
+
+/* Dynamic classes (START HERE)*/
+
+/* About-section (START HERE) */
+/* Big titles (START HERE) */
+.show-bold-1{
+  animation: mainLabels 400ms forwards ease-in;
+}
+.show-thiner-1{
+  animation: mainLabels 400ms forwards 200ms ease-in;
+}
+.show-thinest-1{
+  animation: mainLabels 400ms forwards 400ms ease-in;
+}
+/* Big titles (END HERE) */
+
+/* Show content of the page */
+.show-content{
+  animation: showContent 400ms forwards 1.2s ease-in;
+}
+
+/* Show image */
+.show-image{
+  animation: startInImage 800ms forwards  ease-in;
+}
+
+/* Show line-across*/
+.show-line-across{
+  animation: showLineAcross 1s forwards linear;
+}
+/* About-section (END HERE) */
+
+
+/* Our team section (START HERE) */
+/* Big titles (START HERE) */
+.show-thiner-2{
+  animation: mainLabels 400ms forwards ease-in;
+}
+.show-bold-2{
+  animation: mainLabels 400ms forwards 200ms ease-in;
+}
+/* Big titles (END HERE) */
+
+/* Horizontal-line */
+.show-title-line{
+  animation: titleLine 400ms forwards 500ms ease-in;
+}
+
+/* Grid boxes */
+.show-boxes{
+  animation: showBoxes 1.5s forwards 700ms ease-in;
+}
+
+/* Our team section (END HERE) */
+
+/* Dynamic classes (END HERE) */
+
+
+/* Keyframes start here (ABOUT-PAGE) */
+
+/* About-section (START HERE) */
+@keyframes mainLabels {
+  from{
+    left:-30%;
+    opacity: 0;
+  } to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes showContent{
+  from{
+    left: -30%;
+    opacity: 0;
+  } to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes showLineAcross{
+  to{
+    width: 120vw;
+  }
+}
+/* About-section (END HERE) */
+
+
+/* Our-team section (START HERE) */
+@keyframes titleLine {
+  from{
+    width: 0;
+    opacity: 0;
+  } to {
+    width: 3rem;
+    opacity: 1;
+  }
+}
+
+@keyframes showBoxes{
+  from {
+    top: 10%;
+    opacity: 0;
+  } to {
+    top: 0;
+    opacity: 1;
+  }
+}
+/* Our-team section (END HERE) */
+
+/* Keyframes end here (ABOUT-PAGE) */

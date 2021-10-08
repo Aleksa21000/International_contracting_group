@@ -3,6 +3,8 @@
 const dotsOpen = document.querySelector('.dots-open');
 const dotsClose = document.querySelector('.dots-close');
 const list = document.querySelector('.list');
+// // Vertical text
+const verticalTxt = document.querySelector('.page');
 
 const animeDot2 = document.querySelector('.animate-dot2');
 const animeDot4 = document.querySelector('.animate-dot4');
@@ -21,8 +23,17 @@ function resizeFn() {
     // Menu open on click(Mobile size)
     (function openMenu() {
       dotsOpen.addEventListener('click', function () {
-        list.style.opacity = '1';
-        list.style.width = '100%';
+        list.style.display = 'block';
+
+        setTimeout(function timer() {
+          list.style.opacity = '1';
+          list.style.width = '100vw';
+        }, 100);
+
+
+        // // Hide vertical text
+        verticalTxt.style.left = '-200px';
+        verticalTxt.style.opacity = '0';
 
         if (dotsOpen.classList.contains('dots-open')) {
           dotsOpen.classList.add('disabled');
@@ -64,6 +75,14 @@ function resizeFn() {
           list.style.opacity = '0';
           list.style.width = '0%';
 
+          setTimeout(function timer() {
+            list.style.display = 'none';
+          }, 400);
+
+          // Show vertical txt 
+          verticalTxt.style.left = '-68px';
+          verticalTxt.style.opacity = '1';
+
           dotsClose.style.display = "none";
 
 
@@ -84,8 +103,16 @@ function resizeFn() {
     // Menu open on click (PC size)
     (function openMenu() {
       dotsOpen.addEventListener('click', function () {
-        list.style.opacity = '1';
-        list.style.width = '35%';
+        list.style.display = 'block';
+
+        setTimeout(function timer() {
+          list.style.opacity = '1';
+          list.style.width = '35%';
+        }, 100);
+
+        // Hide vertical text
+        verticalTxt.style.left = '-200px';
+        verticalTxt.style.opacity = '0';
 
         if (dotsOpen.classList.contains('dots-open')) {
           dotsOpen.classList.add('disabled');
@@ -131,6 +158,14 @@ resizeFn();
 
       list.style.opacity = '0';
       list.style.width = '0%';
+
+      setTimeout(function timer() {
+        list.style.display = 'none';
+      }, 400);
+
+      // Show vertical txt 
+      verticalTxt.style.left = '-68px';
+      verticalTxt.style.opacity = '1';
 
       dotsClose.style.display = "none";
 

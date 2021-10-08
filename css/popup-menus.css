@@ -11,6 +11,7 @@
 }
 
 #main-header .main-nav .list{
+  display: none;
   position: fixed;
   z-index: 10;
   top: 0;
@@ -23,8 +24,9 @@
 }
 
 .list .item-list{
+  position: relative;
   height: 100vh;
-  margin-top: 7%;
+  margin-left: 10vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,7 +53,7 @@
   content: '';
   position:absolute;
   top: 50%;
-  left: -61%;
+  left: -200%;
   width: 0%;
   height: 2px;
   background: var(--light-color);
@@ -61,7 +63,7 @@
 
 .list .list-item:hover::before{
   visibility: visible;
-  width: 45%;
+  width: 140%;
 }
 /* Main-nav end here */
 

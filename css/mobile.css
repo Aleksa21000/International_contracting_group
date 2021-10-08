@@ -1,20 +1,45 @@
 @media(max-width: 1700px){
+  /* Home-page */
   /* Second Menu (CONTACT) */
   .second-menu-content > h1{
     font-size: 2.8rem;
   }
-}
 
-/* Ipad Pro and small laptops */
-@media(max-width: 1366px){
-  /* Navigation menu */
-  .list .list-item{
-    font-size: 1.5rem;
-    margin-left: 50%;
+  .main-title{
+    width: 58vw;
   }
 
+  /* About-page */
+  .about-title{
+    width: 25vw;
+  }
+
+  .line-across{
+    margin: 0 0 2rem 7rem;
+  }
+
+  #our-team::before{
+    margin-left: 7rem;
+  }
+}
+
+/* Ipad Pro (landscape) and small laptops */
+@media(max-width: 1366px){
+  /* Logo */
+  #main-header .main-nav .main-content .image{
+    position: relative;
+    width: 130px;
+    height: 130px;
+  }
+
+  /* Navigation menu */
   .list .list-item::before{
-    left: -81%;
+    left: -255%;
+  }
+
+  .list .list-item:hover::before{
+    visibility: visible;
+    width: 195%;
   }
 
   /* Second Menu (CONTACT) */
@@ -29,11 +54,30 @@
   /* Second content */
   .main-title{
     font-size: 3rem;
+    width: 55vw;
+  }
+
+  /* About-page */
+  .about-title{
+    width: 25vw;
+  }
+
+  .down-widget{
+    top: 87vh;
+    left: 15vw;
+  }
+
+  .line-across{
+    display: none;
+  }
+
+  #our-team::before{
+    display: none;
   }
 }
 
 
-/* Ipad classic */
+/* Ipad pro */
 @media(max-width:1024px){
   /* Logo */
   #main-header .main-nav .main-content .image{
@@ -45,7 +89,12 @@
   /* Navigation menu */
   .list .list-item{
     font-size: 1.3rem;
-    margin-left: 50%;
+    margin-left: 30%;
+  }
+
+  .list .list-item:hover::before{
+    visibility: visible;
+    width: 200%;
   }
 
   /* Second Menu (CONTACT) */
@@ -61,31 +110,128 @@
   .second-title > p{
     font-size: 0.9rem;
   }
+
+  /* About-page */
+  .down-widget{
+    top: 90vh;
+    left: 18vw;
+  }
+
+  #about .flex-container .content{
+    width: 100vw;
+  }
+
+  .flex-container .image-container{
+    display: none;
+  }
+
+  /* Our team section */
+  #our-team .container .flex-container{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #our-team .container .flex-container > p{
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  #our-team .container .grid-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+/* Clasic Ipad */
+@media(max-width: 768px){
+  .container{
+    width: 70vw;
+    margin: 0 4rem 0 auto;
+  }
+
+  /* About-page */
+  .about-title{
+    width: 30vw;
+  }
+
+  .down-widget{
+    top: 87.5vh;
+    left: 22vw;
+  }
+
+  .flex-container-content{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .flex-container-content .p1{
+    width: 100%;
+  }
+  
+  .flex-container-content .p2{
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  /* Our team section */
+  #our-team .container .grid-container{
+    grid-template-columns: 1fr;
+  }
+
+  /* Main footer */
+  #main-footer .flex-container .call-to-action .links a{
+    display:block;
+    margin: 1rem 2rem 0 0;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    color: var(--light-color);
+    transition: var(--transition2);
+  }
+
+  #main-footer .flex-container .call-to-action .thinest{
+    font-size: 1.5rem;
+  }
 }
 
 /* Phones */
 @media(max-width: 540px){
-  /* Home-page */
-  #main-header{
-    flex-direction: row;
+  /* Main-menu button */
+  .dots-open{
+    margin: 1rem 0;
   }
 
-  #main-header .main-nav{
-    background:inherit;
-    color: #fff;
-    width: 35%;  
-    display: flex;
-    flex-direction: column;
+  .dots-close{
+    margin: 1rem 0;
+  }
+
+  .container{
+    width: 70vw;
+    margin: 0 1rem 0 auto;
   }
 
   #slider{
     width: 100vw;
   }
 
+  /* Second-menu btn */
+  .btn-nav-secondary-open{
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .btn-nav-secondary-close{
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
   /* Main nav */
   #main-header .main-nav .list{
-    position: absolute;
     z-index: 50;
+  }
+
+  .list .list-item:hover::before{
+    visibility: visible;
+    width: 220%;
   }
 
   #main-header .main-nav .main-content{
@@ -95,7 +241,7 @@
   /* Logo */
   #main-header .main-nav .main-content .image{
     position: relative;
-    width: 90px;
+    width: 70px;
     height: 90px;
   }
 
@@ -114,6 +260,76 @@
     grid-template-columns: 1fr;
     grid-gap: 10vw;
   }
+
+  /* About page */
+  .down-widget{
+    top: 70vh;
+    margin-right: .5rem;
+  }
+
+  #about .flex-container .content .bold-1{
+    font-size: 2.5rem;
+  }
+  
+  #about .flex-container .content .thiner-1{
+    font-size: 2.5rem;
+  }
+  
+  #about .flex-container .content .thinest-1{
+    font-size: 2.5rem;
+  }
+
+  .content .prof{
+    font-size: 0.85rem;
+  }
+
+  .second-title-about{
+    width: 50%;
+    font-size: 0.6rem;
+  }
+
+  .flex-container-content .p1{
+    font-size: 0.6rem;
+  }
+  
+  .flex-container-content .p2{
+    font-size: 0.6rem;
+  }
+
+  .p1 span,
+  .p2 span{
+    font-size: 0.85rem;
+  }
+
+  /* Our team section */
+  #our-team .container .content .thiner-2{
+    font-size: 2.5rem;
+  }
+  
+  #our-team .container .content .bold-2{
+    font-size: 2.5rem;
+  }
+
+  #our-team .container .flex-container > h1{
+    font-size: 0.85rem;
+  }
+
+  #our-team .container .flex-container > p{
+    font-size: 0.6rem;
+  }
+
+  #our-team .container .grid-container .person-container{
+    height: 350px;
+  }
+
+  /* Main footer */
+  #main-footer .flex-container{
+    flex-direction: column;
+  }
+
+  #main-footer .flex-container .btn-primary{
+    margin-top: 2rem;
+  }
 }
 
 /* Small phones Iphone se-5s... */
@@ -130,10 +346,26 @@
   /* Logo */
   #main-header .main-nav .main-content .image{
     position: relative;
-    width: 75px;
+    width: 60px;
     height: 75px;
   }
   
+  /* About page */
+  #about .flex-container .content .bold-1{
+    font-size: 2rem;
+  }
+  
+  #about .flex-container .content .thiner-1{
+    font-size: 2rem;
+  }
+  
+  #about .flex-container .content .thinest-1{
+    font-size: 2rem;
+  }
+
+  .content .prof{
+    font-size: 0.7rem;
+  }
 }
 
 /* Landscape size */
@@ -150,8 +382,12 @@
   }
 
   .list .item-list{
-    margin-top: 4%;
     margin-left: 10%;
+  }
+
+  .list .list-item:hover::before{
+    visibility: visible;
+    width: 220%;
   }
 
   .main-title{
@@ -166,7 +402,7 @@
   #main-header .main-nav .main-content .image{
     position: relative;
     width: 80px;
-    height: 90px;
+    height: 140px;
   }
 
 
@@ -180,5 +416,23 @@
   .second-menu::after{
     content: '';
     height: 300%;
+  }
+
+  /* About page */
+  .content .prof{
+    font-size: 1rem;
+  }
+
+  #our-team .container .flex-container > h1{
+    font-size: 1rem;
+  }
+
+  /* Main footer */
+  #main-footer .flex-container{
+    flex-direction: column;
+  }
+
+  #main-footer .flex-container .btn-primary{
+    margin-top: 2rem;
   }
 }
